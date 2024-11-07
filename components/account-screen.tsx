@@ -24,8 +24,8 @@ export default function AccountScreen() {
   };
 
   const countries = [
-    { value: "us", label: "United States" },
     { value: "uk", label: "United Kingdom" },
+    { value: "us", label: "United States" },
     { value: "ca", label: "Canada" },
     { value: "au", label: "Australia" },
     { value: "de", label: "Germany" },
@@ -48,12 +48,12 @@ export default function AccountScreen() {
   ];
 
   const timezones = [
+    { value: "gmt", label: "Greenwich Mean Time (GMT)" },
     { value: "pst", label: "Pacific Time (PT)" },
     { value: "est", label: "Eastern Time (ET)" },
     { value: "utc", label: "Coordinated Universal Time (UTC)" },
     { value: "cst", label: "Central Time (CT)" },
     { value: "mst", label: "Mountain Time (MT)" },
-    { value: "gmt", label: "Greenwich Mean Time (GMT)" },
     { value: "cet", label: "Central European Time (CET)" },
     { value: "ist", label: "India Standard Time (IST)" },
     { value: "jst", label: "Japan Standard Time (JST)" },

@@ -27,7 +27,7 @@ export default function AuditLogsScreen() {
   const [preset, setPreset] = React.useState<string | undefined>("");
 
   const logs = [
-    { user: { name: "Neo Anderson", email: "neo@matrix.com", avatar: "N" }, event: "Entered the Matrix", icon: DoorOpen, time: "2024-11-07T15:45:00Z" },
+    { user: { name: "Neo Anderson", email: "neo@matrix.com", avatar: "N" }, event: "Entered the Matrix", icon: DoorOpen, time: "2024-11-07T13:45:00Z" },
     { user: { name: "Maverick", email: "maverick@topgun.com", avatar: "M" }, event: "Performed a flyby", icon: Plane, time: "2024-11-07T10:00:00Z" },
     { user: { name: "Rick Sanchez", email: "rick@rickandmorty.com", avatar: "R" }, event: "Traveled to another dimension", icon: Shell, time: "2024-11-05T20:15:00Z" },
     { user: { name: "Roy Trenneman", email: "roy@itcrowd.com", avatar: "R" }, event: "Fixed a computer", icon: Laptop, time: "2024-11-05T13:55:00Z" },

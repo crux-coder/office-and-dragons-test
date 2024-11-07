@@ -23,6 +23,49 @@ export default function AccountScreen() {
     }
   };
 
+  const countries = [
+    { value: "us", label: "United States" },
+    { value: "uk", label: "United Kingdom" },
+    { value: "ca", label: "Canada" },
+    { value: "au", label: "Australia" },
+    { value: "de", label: "Germany" },
+    { value: "fr", label: "France" },
+    { value: "jp", label: "Japan" },
+    { value: "cn", label: "China" },
+    { value: "in", label: "India" },
+    { value: "br", label: "Brazil" },
+    { value: "za", label: "South Africa" },
+    { value: "ru", label: "Russia" },
+    { value: "it", label: "Italy" },
+    { value: "es", label: "Spain" },
+    { value: "mx", label: "Mexico" },
+    { value: "kr", label: "South Korea" },
+    { value: "se", label: "Sweden" },
+    { value: "nl", label: "Netherlands" },
+    { value: "ch", label: "Switzerland" },
+    { value: "tr", label: "Turkey" },
+    // Add more countries as needed
+  ];
+
+  const timezones = [
+    { value: "pst", label: "Pacific Time (PT)" },
+    { value: "est", label: "Eastern Time (ET)" },
+    { value: "utc", label: "Coordinated Universal Time (UTC)" },
+    { value: "cst", label: "Central Time (CT)" },
+    { value: "mst", label: "Mountain Time (MT)" },
+    { value: "gmt", label: "Greenwich Mean Time (GMT)" },
+    { value: "cet", label: "Central European Time (CET)" },
+    { value: "ist", label: "India Standard Time (IST)" },
+    { value: "jst", label: "Japan Standard Time (JST)" },
+    { value: "aest", label: "Australian Eastern Standard Time (AEST)" },
+    { value: "bst", label: "British Summer Time (BST)" },
+    { value: "cst", label: "China Standard Time (CST)" },
+    { value: "brt", label: "Brasília Time (BRT)" },
+    { value: "sast", label: "South Africa Standard Time (SAST)" },
+    { value: "msk", label: "Moscow Standard Time (MSK)" },
+    // Add more timezones as needed
+  ];
+
   return (
     <div className="space-y-4">
       <h2 className="text-xl font-bold">Account</h2>
@@ -74,9 +117,11 @@ export default function AccountScreen() {
                 <SelectValue placeholder="Select country" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="us">United States</SelectItem>
-                <SelectItem value="uk">United Kingdom</SelectItem>
-                <SelectItem value="ca">Canada</SelectItem>
+                {countries.map((country) => (
+                  <SelectItem key={country.value} value={country.value}>
+                    {country.label}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </div>
@@ -95,9 +140,11 @@ export default function AccountScreen() {
                 <SelectValue placeholder="Select timezone" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="pst">Pacific Time (PT)</SelectItem>
-                <SelectItem value="est">Eastern Time (ET)</SelectItem>
-                <SelectItem value="utc">Coordinated Universal Time (UTC)</SelectItem>
+                {timezones.map((timezone) => (
+                  <SelectItem key={timezone.value} value={timezone.value}>
+                    {timezone.label}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </div>

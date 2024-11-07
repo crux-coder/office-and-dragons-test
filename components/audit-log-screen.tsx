@@ -24,7 +24,7 @@ export default function AuditLogsScreen() {
     from: addDays(new Date(), -7),
     to: new Date(),
   });
-  const [preset, setPreset] = React.useState<string | undefined>("today");
+  const [preset, setPreset] = React.useState<string | undefined>("");
 
   const logs = [
     { user: { name: "Neo Anderson", email: "neo@matrix.com", avatar: "N" }, event: "Entered the Matrix", icon: DoorOpen, time: "2024-11-07T15:45:00Z" },

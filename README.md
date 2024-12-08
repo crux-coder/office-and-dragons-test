@@ -1,9 +1,6 @@
 ## Office and Dragons test project
 
-This is a small demonstration of familiarization of [shadcn](https://ui.shadcn.com/) and [Next.js](https://nextjs.org);
-
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a small demonstration of familiarization of [shadcn](https://ui.shadcn.com/) and [Next.js](https://nextjs.org).
 
 ## Getting Started
 
